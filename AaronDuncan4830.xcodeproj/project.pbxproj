@@ -21,6 +21,7 @@
 		CE8E6B1B19C240AD00419B98 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8E6AFD19C240AD00419B98 /* UIKit.framework */; };
 		CE8E6B2319C240AD00419B98 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE8E6B2119C240AD00419B98 /* InfoPlist.strings */; };
 		CE8E6B2519C240AD00419B98 /* AaronDuncan4830Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8E6B2419C240AD00419B98 /* AaronDuncan4830Tests.m */; };
+		CE8E6B2F19C27C3400419B98 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8E6B2E19C27C3400419B98 /* View.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		CE8E6B2019C240AD00419B98 /* AaronDuncan4830Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AaronDuncan4830Tests-Info.plist"; sourceTree = "<group>"; };
 		CE8E6B2219C240AD00419B98 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE8E6B2419C240AD00419B98 /* AaronDuncan4830Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AaronDuncan4830Tests.m; sourceTree = "<group>"; };
+		CE8E6B2E19C27C3400419B98 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				CE8E6B0F19C240AD00419B98 /* ViewController.m */,
 				CE8E6B1119C240AD00419B98 /* Images.xcassets */,
 				CE8E6B0019C240AD00419B98 /* Supporting Files */,
+				CE8E6B2E19C27C3400419B98 /* View.xib */,
 			);
 			path = AaronDuncan4830;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8E6B2F19C27C3400419B98 /* View.xib in Resources */,
 				CE8E6B1219C240AD00419B98 /* Images.xcassets in Resources */,
 				CE8E6B0419C240AD00419B98 /* InfoPlist.strings in Resources */,
 				CE8E6B0D19C240AD00419B98 /* Main.storyboard in Resources */,
