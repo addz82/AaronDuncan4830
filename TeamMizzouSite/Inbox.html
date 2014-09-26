@@ -201,78 +201,127 @@ body,td,th {
 <body>
   <div class="header"><img src="images/TMbanner.jpg" width="100%" height="15%" alt="TeamMizzou Banner"><a href="#" class="header"></a><!-- end .header --></div>
 
-	<div id="content">
+	<div align="center" class="content">
 		<!--Main column-->
-			<div class="post">
-	<h2><a href="#">Captain America Kicks Ass!</a></h2>
+			
+	<h2>Team Mizzou Blog</h2>
 	
-	<a href="#" class="post-thumbnail"><img src="images/TMProfilePicture.jpg" alt="Read the full post" /></a>
+	<a href="#"><img src="images/TMProfilePicture.jpg" alt="Read the full post" /></a>
 	
-	<p>Lorizzle ipsum dolor sizzle ghetto, consectetuer fizzle elit. Sheezy doggy velizzle, i saw beyonces tizzles and my pizzle went crizzle volutpizzle, suscipit cool, own yo' vizzle, arcu. Pellentesque eget phat. My shizz erizzle. For sure izzle dolizzle for sure turpis tempizzle sizzle. Maurizzle i saw beyonces tizzles and my pizzle went crizzle nibh et turpizzle. Bizzle izzle i saw beyonces tizzles and my pizzle went crizzle. Pellentesque eleifend pot nisi. In hac habitasse platea dictumst. Pimpin' dapibizzle. Cool tellus owned, pretizzle eu, mattis uhuh ... yih!, eleifend dang, nunc. Ma nizzle suscipizzle. Integizzle shizzlin dizzle away sizzle purus. Mammasay mammasa mamma oo sa at dope. Yo mamma erizzle. condimentizzle, turpizzle nizzle congue consectetuer, brizzle libero bling bling fizzle, sizzle ullamcorper sure for sure nizzle sizzle. </p> 
+	<p>Hello World </p> 
 	
 	
-	<div class="post-info">
-		<ul>
-			<li class="date">18th August 2011</li>
-			<li class="category">Posted in <a href="#">Reviews</a></li>
-			<li class="read-more"><a href="#">Read more</a></li>
-		</ul>
-	</div>
-	<div class="pagination">
-	<p class="prev"><a href="#">Older articles</a></p>
-	<p class="next"><a href="#">Newer articles</a></p>
-</div>
-</div>
-<!--Sidebar-->
-	<div id="sidebar2">
-	<ul id="pages">
-		<li><a href="#">Home</a></li>
-		<li><a href="#">About</a></li>
-		<li><a href="#">Archives</a></li>	
-		<li><a href="#">Contact</a></li>
-	</ul>
+			<li>18th September 2014</li>
+			<li>Posted in <a href="#">Reviews</a></li>
+			<li><a href="#">Read more</a></li>
 	
-	<h3>Categories</h3>
-	<ul id="categories">
-		<li><a href="#">Movies</a></li>
-		<li><a href="#">Reviews</a></li>
-		<li><a href="#">Articles</a></li>	
-	</ul>
+	<p><a href="#">Older articles</a></p>
+	<p><a href="#">Newer articles</a></p>
+  <!-- end .content --></div>
+  <div class="sidebar2">
+<form class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search">
+  </div>
+  <button type="submit" class="btn btn-default">Search</button>
+</form>	<div id="mapCanvas" style="width:100%; height:100%; min-width:200px; min-height:200px"></div>
+    <script type="text/javascript">
+// BeginOAWidget_Instance_2187524: #mapCanvas
+
+	  // initialize the google Maps 	
 	
-	<h3>Search</h3>
+     function initializeGoogleMap() {
+		// set latitude and longitude to center the map around
+		var latlng = new google.maps.LatLng(38.9417, 
+											-92.3269);
+		
+		// set up the default options
+		var myOptions = {
+		  zoom: 15,
+		  center: latlng,
+		  navigationControl: true,
+		  navigationControlOptions: 
+		  	{style: google.maps.NavigationControlStyle.DEFAULT,
+			 position: google.maps.ControlPosition.RIGHT },
+		  mapTypeControl: true,
+		  mapTypeControlOptions: 
+		  	{style: google.maps.MapTypeControlStyle.DEFAULT,
+			 position: google.maps.ControlPosition.TOP_LEFT },
+
+		  scaleControl: true,
+		   scaleControlOptions: {
+        		position: google.maps.ControlPosition.BOTTOM_RIGHT
+    	  }, 
+		  mapTypeId: google.maps.MapTypeId.ROADMAP,
+		  draggable: true,
+		  disableDoubleClickZoom: false,
+		  keyboardShortcuts: true
+		};
+		var map = new google.maps.Map(document.getElementById("mapCanvas"), myOptions);
+		if (false) {
+			var trafficLayer = new google.maps.TrafficLayer();
+			trafficLayer.setMap(map);
+		}
+		if (false) {
+			var bikeLayer = new google.maps.BicyclingLayer();
+			bikeLayer.setMap(map);
+		}
+		if (false) {
+			addMarker(map,37.7715,-122.4,"We are here");
+		}
+	  }
+
+	  window.onload = initializeGoogleMap();
+
+	 // Add a marker to the map at specified latitude and longitude with tooltip
+	 function addMarker(map,lat,long,titleText) {
+	  	var markerLatlng = new google.maps.LatLng(lat,long);
+	 	var marker = new google.maps.Marker({
+      		position: markerLatlng, 
+      		map: map, 
+      		title:"We are here",
+			icon: ""});   
+	 }
+
 	
-	<form method="get" id="search" action="#">
-		<fieldset>
-			<input type="text" class="searchbar" />
-			<input type="button" class="searchbutton" value="Search" />
-		</fieldset>
-	</form>
+// EndOAWidget_Instance_2187524
+    </script>
+
+  <!-- end .sidebar2 --></div>
+  <div align= "center" class="footer">
+    <div class="social"></div>
+    <script type="text/javascript">
+// BeginOAWidget_Instance_2149023: #social
 	
-	<h3>About</h3>
+	$('.social').jsocial({
+			twitter		:  'twitter.com',
+			facebook	:  'facebook.com/groups/TeamMizzou/',
+			flickr		:  'flickr.com',
+			youtube		:  'youtube.com',
+			feed		:  'feeds.feedburner.com',
+			center		: true,	
+			inline		: true,
+			small		: false,
+			newPage		: true,
+			
+		});
 	
-	<p>Ticket Stub is a WordPress Theme based on the idea of a movie reviews site, but the overall design and layout makes the theme a perfect choice for any type of blog. <a href="#">Read more&hellip;</a></p>
-	
-</div>
-</div>
-<div id="container">
-<div id="header">
-	<h1><a href="#"><img src="images/TMProfilePicture.jpg" alt="Return to the homepage" id="logo" /></a></h1>
-	
-	<ul id="subscribe">
-		<li class="rss"><a href="#">Subscribe by RSS</a></li>
-		<li class="twitter"><a href="#">Follow on Twitter</a></li>
-	</ul>
-</div>
-</div>
-<div id="footer">
-	<ul id="credits">
-		<li class="wordpress"><a href="http://wordpress.org">Powered by WordPress</a></li>
-		<li class="spoongraphics"><a href="http://www.blog.spoongraphics.co.uk">Theme by SpoonGraphics</a></li>
-	</ul>
-	
-	<p id="back-top"><a href="#">Back to top</a></p>
+
+// EndOAWidget_Instance_2149023
+    </script>
+    <p align="right"> Help	Terms	Privacy</p>
+<p class="footer">&copy;2012 #TeamMizzou</p>
 </div>
 
-
+<!-- end .footer --></div>
+<!-- end .container --></div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1");
+</script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
